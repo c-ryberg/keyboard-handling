@@ -1,0 +1,12 @@
+.note {
+    border-color: #52e052;
+    background: #e9fbe9;
+    color: black;
+
+    border-right: none;
+    padding: 1em;
+    margin: 1.5em 0;
+    border-left: 0.5em solid #178217;
+    border-top: 1px solid #178217;
+    border-bottom: 1px solid #178217;
+}
