@@ -1,5 +1,7 @@
 import { Keyboard, Target, Puzzle, Beaker, Bug, Mouse } from "lucide-react";
 
+import { MouseOperationsTable } from './pageComponents/MouseOperationsTable'
+
 const KeyboardIcon = () => <Keyboard className="w-6 h-6 inline-block mr-2" />;
 const TargetIcon = () => <Target className="w-6 h-6 inline-block mr-2" />;
 const PuzzleIcon = () => <Puzzle className="w-6 h-6 inline-block mr-2" />;
@@ -7,14 +9,20 @@ const BeakerIcon = () => <Beaker className="w-6 h-6 inline-block mr-2" />;
 const BugIcon = () => <Bug className="w-6 h-6 inline-block mr-2" />;
 const MouseIcon = () => <Mouse className="w-6 h-6 inline-block mr-2" />;
 
+
+/**
+ * todo:
+ * - Make the keys to use section look like keys
+ * add a home link and links to the other pages
+ */
 export default function KeyboardTestingPage() {
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+    <div className="min-h-screen bg-gray-100">
         <header className="bg-blue-600 text-white py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold">Keyboard Testing Guide</h1>
+          <h1 className="max-w-3xl mx-auto text-3xl font-bold">Keyboard Testing Guide</h1>
         </header>
 
+      <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
         <main className="py-8 px-4 sm:px-6 lg:px-8">
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center text-blue-700">
@@ -204,11 +212,18 @@ export default function KeyboardTestingPage() {
             </ol>
           </section>
 
-          <section>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-blue-700">
+              <MouseIcon /> Mouse Operations Table
+            </h2>
+            <MouseOperationsTable />
+          </section>
+
+          <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center text-blue-700">
               <BugIcon /> Common Issues to Watch For
             </h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <ul className="list-none pl-6 space-y-2 text-gray-700">
               <li>
                 <strong className="text-red-600">🚫 No Focus Indicator:</strong>{" "}
                 Focus is invisible or styled out.
