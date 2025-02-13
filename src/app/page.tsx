@@ -17,12 +17,10 @@ import {
 import "./App.css";
 /**
  * todo:
- * - Copy over the the JS from the CodePen
  * - Replace the favicon
  * - Give the page a nicer font
  * - make this mobile friendly
  * - explain that all info is pulled from the WAI-ARIA Authoring Practices and Mozilla
- * - Make a NOTE component
  * - Add a "last updated" timestamp
  * - make sure all the links actually work
  * - Add details about visual accessibility: focus states, selected states, etc.
