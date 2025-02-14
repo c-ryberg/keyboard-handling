@@ -1,26 +1,62 @@
-import { Keyboard, Target, Puzzle, Beaker, Bug, Mouse } from "lucide-react";
+import { CircleX, Keyboard, Target, Puzzle, Bug, Mouse, X } from "lucide-react";
 
-import { MouseOperationsTable } from './pageComponents/MouseOperationsTable'
+import { MouseOperationsTable } from "./pageComponents/MouseOperationsTable";
 
-const KeyboardIcon = () => <Keyboard className="w-6 h-6 inline-block mr-2" />;
-const TargetIcon = () => <Target className="w-6 h-6 inline-block mr-2" />;
-const PuzzleIcon = () => <Puzzle className="w-6 h-6 inline-block mr-2" />;
-const BeakerIcon = () => <Beaker className="w-6 h-6 inline-block mr-2" />;
-const BugIcon = () => <Bug className="w-6 h-6 inline-block mr-2" />;
-const MouseIcon = () => <Mouse className="w-6 h-6 inline-block mr-2" />;
+const iconClasses = "w-6 h-6 inline-block";
+const KeyboardIcon = () => (
+  <Keyboard aria-hidden="true" className={`${iconClasses} mr-2`} />
+);
+const TargetIcon = () => (
+  <Target aria-hidden="true" className={`${iconClasses} mr-2`} />
+);
+const PuzzleIcon = () => (
+  <Puzzle aria-hidden="true" className={`${iconClasses} mr-2`} />
+);
+const BugIcon = () => (
+  <Bug aria-hidden="true" className={`${iconClasses} mr-2`} />
+);
+const MouseIcon = () => (
+  <Mouse aria-hidden="true" className={`${iconClasses} mr-2`} />
+);
+const Cross = () => (
+  <CircleX aria-hidden="true" className={`${iconClasses} text-red-600`} />
+);
 
-
-/**
- * todo:
- * - Make the keys to use section look like keys
- * add a home link and links to the other pages
- */
 export default function KeyboardTestingPage() {
   return (
     <div className="min-h-screen bg-gray-100">
-        <header className="bg-blue-600 text-white py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="max-w-3xl mx-auto text-3xl font-bold">Keyboard Testing Guide</h1>
-        </header>
+      <header className="bg-blue-600 text-white py-6 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto flex justify-between items-center">
+          <h1 className="text-3xl font-bold">
+            <a
+              href="/"
+              className="text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 rounded-md"
+            >
+              Keyboard Testing Guide
+            </a>
+          </h1>
+          <nav>
+            <ul className="flex space-x-4">
+              <li>
+                <a
+                  href="/reference"
+                  className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 rounded-md px-2 py-1"
+                >
+                  Reference
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/demo"
+                  className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 rounded-md px-2 py-1"
+                >
+                  Demo
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
       <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
         <main className="py-8 px-4 sm:px-6 lg:px-8">
@@ -46,8 +82,8 @@ export default function KeyboardTestingPage() {
             </p>
             <blockquote className="border-l-4 border-blue-500 pl-4 my-4 text-gray-600">
               If you can operate something on the page with a mouse, such as
-              selecting, opening, editing, scrolling, etc... then you should
-              also be able to do it without a mouse
+              selecting, opening, editing, scrolling, etc... then you must also
+              be able to do it <strong>without</strong> a mouse
             </blockquote>
           </section>
 
@@ -74,6 +110,11 @@ export default function KeyboardTestingPage() {
                 <strong>No Keyboard Traps:</strong> Users should never get
                 "stuck" on an element and be unable to navigate away.
               </li>
+              <li>
+                <strong>Efficient Navigation:</strong> Users should be able to
+                bypass repetivite content (e.g. provide a skip link to jump past
+                navigation bars)
+              </li>
             </ul>
           </section>
 
@@ -81,135 +122,35 @@ export default function KeyboardTestingPage() {
             <h2 className="text-2xl font-semibold mb-4 flex items-center text-blue-700">
               <KeyboardIcon /> Keys to Use During Testing
             </h2>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+            <ul className="grid grid-cols-1 gap-2 text-gray-700">
               <li>
-                <strong>Tab:</strong> Move forward through interactive elements
+                <kbd>Tab</kbd> Move forward through interactive elements
               </li>
               <li>
-                <strong>Shift + Tab:</strong> Move backward through interactive
+                <kbd>Shift + Tab</kbd> Move backward through interactive
                 elements
               </li>
               <li>
-                <strong>Enter:</strong> Activate buttons, links, and form
-                submissions
+                <kbd>Enter</kbd> Activate buttons, links, and form submissions
               </li>
               <li>
-                <strong>Spacebar:</strong> Toggle checkboxes or play/pause media
+                <kbd>Spacebar</kbd> Toggle checkboxes or play/pause media
               </li>
               <li>
-                <strong>Arrow keys:</strong> Navigate within sliders, dropdown
-                menus, and radio button groups
+                <kbd>Arrow keys</kbd> Navigate within sliders, dropdown menus,
+                and radio button groups
               </li>
               <li>
-                <strong>Esc (Escape):</strong> Close modals, dropdowns, or
-                pop-up menus
+                <kbd>Esc (Escape)</kbd> Close modals, dropdowns, or pop-up menus
               </li>
               <li>
-                <strong>Home/End:</strong> Jump to the start or end of lists or
-                menus
+                <kbd>Home/End</kbd> Jump to the start or end of lists or menus
               </li>
               <li>
-                <strong>Page Up/Page Down:</strong> Scroll within long content
-                sections or listboxes
+                <kbd>Page Up/Page Down</kbd> Scroll within long content sections
+                or listboxes
               </li>
             </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 flex items-center text-blue-700">
-              <BeakerIcon /> Step-by-Step Testing Process
-            </h2>
-            <ol className="list-decimal pl-6 space-y-4 text-gray-700">
-              <li>
-                <strong>General Navigation:</strong>
-                <ul className="list-disc pl-6 mt-2 space-y-2">
-                  <li>
-                    Use Tab to navigate through the entire page.
-                    <ul className="list-none pl-6 mt-1">
-                      <li>
-                        ✅ Confirm that the focus moves in a logical order.
-                      </li>
-                      <li>
-                        ✅ Check if every interactive element is reachable.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Use Shift + Tab to navigate backward.
-                    <ul className="list-none pl-6 mt-1">
-                      <li>✅ Confirm that focus moves in reverse order.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Focus Management:</strong>
-                <ul className="list-disc pl-6 mt-2 space-y-2">
-                  <li>
-                    Ensure each element has a visible focus indicator (e.g., a
-                    colored outline around buttons or inputs).
-                  </li>
-                  <li>
-                    Test if modals/dialogs trap focus inside them until they are
-                    closed.
-                  </li>
-                  <li>
-                    When closing a dialog, confirm that the focus returns to the
-                    previously focused element.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Interactive Elements:</strong>
-                <ul className="list-disc pl-6 mt-2 space-y-2">
-                  <li>
-                    Links/Buttons: Press Enter or Spacebar to activate them.
-                  </li>
-                  <li>
-                    Forms: Navigate through inputs with Tab and submit with
-                    Enter.
-                  </li>
-                  <li>
-                    Dropdowns (&lt;select&gt;): Use Arrow keys to move through
-                    options and Enter to select.
-                  </li>
-                  <li>
-                    Radio Buttons: Use Arrow keys to move between options.
-                  </li>
-                  <li>
-                    Sliders: Adjust values with Arrow keys and jump to min/max
-                    with Home and End.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Modals, Popups, and Dialogs:</strong>
-                <ul className="list-disc pl-6 mt-2 space-y-2">
-                  <li>Open with Enter or Spacebar.</li>
-                  <li>Close with Esc.</li>
-                  <li>
-                    Confirm that focus is trapped within the dialog (can't Tab
-                    out).
-                  </li>
-                  <li>
-                    Confirm that after closing, focus returns to the trigger
-                    button.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>
-                  Custom Components (e.g., custom dropdowns, carousels):
-                </strong>
-                <ul className="list-disc pl-6 mt-2 space-y-2">
-                  <li>Verify they are keyboard-operable.</li>
-                  <li>
-                    Confirm they follow ARIA roles and keyboard behaviors
-                    similar to native HTML components.
-                  </li>
-                </ul>
-              </li>
-            </ol>
           </section>
 
           <section className="mb-8">
@@ -225,28 +166,38 @@ export default function KeyboardTestingPage() {
             </h2>
             <ul className="list-none pl-6 space-y-2 text-gray-700">
               <li>
-                <strong className="text-red-600">🚫 No Focus Indicator:</strong>{" "}
+                <strong className="text-red-600">
+                  <Cross /> No Focus Indicator:
+                </strong>{" "}
                 Focus is invisible or styled out.
               </li>
               <li>
                 <strong className="text-red-600">
-                  🚫 Incorrect Tab Order:
+                  <Cross /> Incorrect Tab Order:
                 </strong>{" "}
                 Focus jumps around unexpectedly.
               </li>
               <li>
-                <strong className="text-red-600">🚫 Keyboard Traps:</strong> You
-                cannot escape a modal without refreshing the page.
+                <strong className="text-red-600">
+                  <Cross /> Keyboard Traps:
+                </strong>{" "}
+                You cannot escape a modal without refreshing the page.
               </li>
               <li>
                 <strong className="text-red-600">
-                  🚫 Custom Components Without ARIA Roles:
+                  <Cross /> Missing skip link:
+                </strong>{" "}
+                There is no skip link feature to bypass the navigation bar.
+              </li>
+              <li>
+                <strong className="text-red-600">
+                  <Cross /> Custom Components Without Native Behavior:
                 </strong>{" "}
                 Components that don't behave like their native equivalents.
               </li>
               <li>
                 <strong className="text-red-600">
-                  🚫 Non-Responsive Controls:
+                  <Cross /> Non-Responsive Controls:
                 </strong>{" "}
                 Buttons or links that do nothing when activated with Enter or
                 Spacebar.
