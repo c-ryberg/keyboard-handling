@@ -1,11 +1,3 @@
-.app {
-  padding: 0.5rem;
-  max-width: 1375px;
-  margin: 0 auto;
-
-  line-height: 1.5rem;;
-}
-
 .display-table,
 .display-table__row,
 .display-table__cell {
@@ -28,40 +20,21 @@
   width: 50%;
 }
 
-kbd {
-  display: inline-block;
-  padding: 0.1em 0.3em;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 0.2em;
-  box-shadow: inset 0 -1px 0 #bbb;
-  font-size: .9em;
-}
-
-details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 0.5em 0.5em 0;
-}
-
-summary {
+.reference-page summary {
   font-weight: bold;
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
 }
 
-details[open] {
+.reference-page details[open] {
   padding: 0.5em;
 }
 
-details[open] summary {
+.reference-page details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
 }
 
-select {
+.reference-page select {
   margin-left: 0.5rem;
 }

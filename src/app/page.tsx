@@ -1,6 +1,6 @@
 import { CircleX, Keyboard, Target, Puzzle, Bug, Mouse } from "lucide-react";
-import Link from "next/link";
 
+import { NavHeader } from "../components/layout/NavHeader";
 import { MouseOperationsTable } from "./pageComponents/MouseOperationsTable";
 
 const iconClasses = "w-6 h-6 inline-block";
@@ -26,38 +26,7 @@ const Cross = () => (
 export default function KeyboardTestingPage() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-blue-600 text-white py-6 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto flex justify-between items-center">
-          <h1 className="text-3xl font-bold">
-            <Link
-              href="/"
-              className="text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 rounded-md"
-            >
-              Keyboard Testing Guide
-            </Link>
-          </h1>
-          <nav>
-            <ul className="flex space-x-4">
-              <li>
-                <Link
-                  href="/reference"
-                  className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 rounded-md px-2 py-1"
-                >
-                  Reference
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/demo"
-                  className="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 rounded-md px-2 py-1"
-                >
-                  Demo
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <NavHeader />
 
       <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
         <main className="py-8 px-4 sm:px-6 lg:px-8">

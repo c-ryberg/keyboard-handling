@@ -1,10 +1,12 @@
-const ProductCategories = () => {
-  const categories = ["Electronics", "Clothing", "Home & Garden"]
+export const ProductCategories = () => {
+  const categories = ["Electronics", "Clothing", "Home & Garden"];
 
   return (
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Product Categories</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          Product Categories
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {categories.map((category, index) => (
             <a
@@ -14,14 +16,13 @@ const ProductCategories = () => {
               style={{ outline: "none" }}
             >
               <h3 className="text-xl font-semibold mb-2">{category}</h3>
-              <p className="text-gray-600">Explore our {category.toLowerCase()} collection</p>
+              <p className="text-gray-600">
+                Explore our {category.toLowerCase()} collection
+              </p>
             </a>
           ))}
         </div>
       </div>
     </section>
-  )
-}
-
-export default ProductCategories
-
+  );
+};

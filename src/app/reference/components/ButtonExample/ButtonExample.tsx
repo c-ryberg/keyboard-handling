@@ -7,7 +7,7 @@ export const ButtonExample = () => {
   return (
     <>
       <p>
-        The button has been clicked <span id="btn-counter">{btnCounter}</span>{" "}
+        The button has been clicked <strong id="btn-counter">{btnCounter}</strong>{" "}
         times
       </p>
       <button

@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 
-const Header = () => {
+export const Header = () => {
   const [isSubMenuOpen, setIsSubMenuOpen] = useState<boolean>(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
 
@@ -112,6 +112,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header
-

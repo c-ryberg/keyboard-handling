@@ -4,7 +4,7 @@ import { useState } from "react"
 
 const countries = ["United States", "Canada", "United Kingdom", "Australia", "Germany", "France", "Japan", "Brazil"]
 
-const CountrySelect = ({ value, onChange }: { value: string; onChange: (value: string) => void }) => {
+export const CountrySelect = ({ value, onChange }: { value: string; onChange: (value: string) => void }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -31,6 +31,3 @@ const CountrySelect = ({ value, onChange }: { value: string; onChange: (value: s
     </div>
   )
 }
-
-export default CountrySelect
-

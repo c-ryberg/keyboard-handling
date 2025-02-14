@@ -1,10 +1,10 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import ProductCategories from "./components/ProductCategories";
-import BlogTiles from "./components/BlogTiles";
-import NewsletterForm from "./components/NewsletterForm";
-import Footer from "./components/Footer";
-import SustainabilityPromo from "./components/SustainabilityPromo";
+import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
+import { ProductCategories } from "./components/ProductCategories";
+import { BlogTiles } from "./components/BlogTiles";
+import { NewsletterForm } from "./components/NewsletterForm";
+import { Footer } from "./components/Footer";
+import { SustainabilityPromo } from "./components/SustainabilityPromo";
 
 import "./a11y-issues-demo.css";
 

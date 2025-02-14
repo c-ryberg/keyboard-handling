@@ -1,0 +1,79 @@
+/* Undo the tailwind CSS reset */
+::before,
+::after {
+  box-sizing: revert;
+  border-width: revert;
+  border-style: revert;
+  border-color: revert;
+}
+
+.reference-page h1,
+.reference-page h2,
+.reference-page h3,
+.reference-page h4,
+.reference-page h5,
+.reference-page h6 {
+  font-size: revert;
+  font-weight: revert;
+}
+
+.reference-page a {
+  color: revert;
+  text-decoration: revert;
+}
+
+.reference-page button,
+.reference-page input,
+.reference-page optgroup,
+.reference-page select,
+.reference-page textarea {
+  color: revert;
+  margin: revert;
+  padding: revert;
+  box-sizing: revert;
+  border-width: revert;
+  border-style: revert;
+  border-color: revert;
+}
+
+.reference-page button,
+.reference-page input:where([type='button']),
+.reference-page input:where([type='reset']),
+.reference-page input:where([type='submit']) {
+  -webkit-appearance: revert;
+  background-color: revert;
+  background-image: revert;
+}
+
+.reference-page blockquote,
+.reference-page dl,
+.reference-page dd,
+.reference-page h1,
+.reference-page h2,
+.reference-page h3,
+.reference-page h4,
+.reference-page h5,
+.reference-page h6,
+.reference-page hr,
+.reference-page figure,
+.reference-page p,
+.reference-page pre {
+  margin: revert;
+}
+
+.reference-page fieldset {
+  margin: revert;
+  padding: revert;
+}
+
+.reference-page dialog {
+  padding: revert;
+}
+
+.reference-page ol,
+.reference-page ul,
+.reference-page menu {
+  list-style: revert;
+  margin: revert;
+  padding: revert;
+}

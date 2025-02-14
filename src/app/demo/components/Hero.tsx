@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <section className="relative h-96">
       <a href="https://www.google.com" className="block w-full h-full">
@@ -19,4 +19,3 @@ const Hero = () => {
   );
 };
 
-export default Hero;

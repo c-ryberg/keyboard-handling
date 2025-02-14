@@ -1,6 +1,6 @@
 "use client";
 
-const BlogTiles = () => {
+export const BlogTiles = () => {
   const blogPosts = [
     {
       title: "New Summer Collection",
@@ -42,5 +42,3 @@ const BlogTiles = () => {
     </section>
   );
 };
-
-export default BlogTiles;

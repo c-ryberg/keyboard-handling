@@ -1,4 +1,3 @@
-/* Todo: only import these on the non-reference pages. Maybe only the ones that use the layout? */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
