@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CircleX, Keyboard, Target, Puzzle, Bug, Mouse } from "lucide-react";
 
 import { NavHeader } from "../components/layout/NavHeader";
@@ -35,10 +36,11 @@ export default function KeyboardTestingPage() {
               <TargetIcon /> Objective of Keyboard Testing
             </h2>
             <p className="text-gray-700">
-              To ensure that every interactive element on a web application can
-              be accessed, used, and navigated using only a keyboard. This is
-              essential for users who rely on screen readers, switch devices, or
-              who cannot use a mouse.
+              The purpose of keyboard testing is to ensure that every
+              interactive element in a web application can be accessed, used,
+              and navigated by using only a keyboard. This is essential for
+              users who rely on screen readers, switch devices, or who cannot
+              use a mouse.
             </p>
           </section>
 
@@ -51,15 +53,16 @@ export default function KeyboardTestingPage() {
               keyboard for navigation, think of it like this:
             </p>
             <blockquote className="border-l-4 border-blue-500 pl-4 my-4 text-gray-600">
-              If you can operate something on the page with a mouse, such as
-              selecting, opening, editing, scrolling, etc... then you must also
-              be able to do it <strong>without</strong> a mouse
+              If you are able to operate something on the page{" "}
+              <strong>with</strong> a mouse, such as selecting, opening,
+              editing, scrolling, etc... then it should also be possible to
+              operate it <strong>without</strong> a mouse
             </blockquote>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center text-blue-700">
-              <PuzzleIcon /> Key Principles of Keyboard Accessibility
+              <PuzzleIcon /> Key Principles of Keyboard Testing
             </h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>
@@ -68,13 +71,9 @@ export default function KeyboardTestingPage() {
                 top-to-bottom).
               </li>
               <li>
-                <strong>Visible Focus Indicator:</strong> There should always be
-                a visible outline showing which element is currently focused.
-              </li>
-              <li>
-                <strong>Operability with Standard Keys:</strong> Users should be
-                able to interact with all controls using common keyboard
-                shortcuts.
+                <strong>Visible Focus Indicator:</strong> While navigating,
+                there should always be a visible outline showing which element
+                is currently focused.
               </li>
               <li>
                 <strong>No Keyboard Traps:</strong> Users should never get
@@ -85,7 +84,22 @@ export default function KeyboardTestingPage() {
                 bypass repetivite content (e.g. provide a skip link to jump past
                 navigation bars)
               </li>
+              <li>
+                <strong>Operability with Standard Keys:</strong> Users should be
+                able to interact with all controls using common keyboard
+                patterns.
+              </li>
             </ul>
+            <p className="mt-4">
+              Read through the{" "}
+              <Link
+                href="/reference"
+                className="hover:underline focus:ring-2 text-blue-600"
+              >
+                HTML elements reference page
+              </Link>{" "}
+              to learn about the most common keyboard patterns
+            </p>
           </section>
 
           <section className="mb-8">

@@ -42,7 +42,6 @@ export default function Home() {
       <NavHeader />
       <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
         <main className="py-8 px-4 sm:px-6 lg:px-8 reference-page">
-          <h1>Keyboard handling for native HTML elements</h1>
           <IntroDescription />
 
           <div className="display-table">
