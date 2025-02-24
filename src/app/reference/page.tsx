@@ -7,7 +7,9 @@ import {
   CheckboxInteractions,
   DiscolsureInteractions,
   FormExample,
+  FormInteractions,
   InputTypeExample,
+  InputTypeInteractions,
   IntroDescription,
   LinkInteractions,
   ModalDialogExample,
@@ -15,13 +17,11 @@ import {
   RadioGroupInteractions,
   SingleSelectExample,
   SingleSelectInteractions,
+  SpecialInputTypeExample,
+  SpecialInputTypeInteractions,
 } from "./components";
 import "./tailwind-reverts.css";
 import "./reference.css";
-/**
- * todo:
- * - make this mobile friendly
- */
 
 export const metadata: Metadata = {
   title: "Expected keyboard patterns in native HTML",
@@ -200,10 +200,22 @@ export default function Home() {
 
             <div className="display-table__row">
               <div className="display-table__cell">
-                <h2>Special Input Types</h2>
+                <h2>Text Input</h2>
                 <InputTypeExample />
               </div>
-              <div className="display-table__cell"></div>
+              <div className="display-table__cell">
+                <InputTypeInteractions />
+              </div>
+            </div>
+
+            <div className="display-table__row">
+              <div className="display-table__cell">
+                <h2>Special Input Types</h2>
+                <SpecialInputTypeExample />
+              </div>
+              <div className="display-table__cell">
+                <SpecialInputTypeInteractions />
+              </div>
             </div>
 
             <div className="display-table__row">
@@ -212,7 +224,7 @@ export default function Home() {
                 <FormExample />
               </div>
               <div className="display-table__cell">
-                <p>Other text</p>
+                <FormInteractions />
               </div>
             </div>
           </div>

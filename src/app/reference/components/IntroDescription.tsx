@@ -65,7 +65,7 @@ export const IntroDescription = () => {
             MDN Elements Web Docs
           </a>
         </p>
-        <small>This page was last updated: February 20, 2025</small>
+        <small>This page was last updated: February 24, 2025</small>
       </div>
     </div>
   );
