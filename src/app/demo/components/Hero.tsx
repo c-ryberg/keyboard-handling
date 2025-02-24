@@ -1,11 +1,12 @@
 import Image from "next/image";
+import heroImage from "../../../../public/tobias-rademacher-NuBvAE6VfSM-unsplash.jpg";
 
 export const Hero = () => {
   return (
     <section className="relative h-96">
       <a href="https://www.google.com" className="block w-full h-full">
         <Image
-          src="/placeholder.svg?height=384&width=1024"
+          src={heroImage}
           alt="Hero image"
           className="w-full h-full object-cover"
           width="1024"
@@ -18,4 +19,3 @@ export const Hero = () => {
     </section>
   );
 };
-
