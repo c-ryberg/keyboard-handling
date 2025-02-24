@@ -55,7 +55,7 @@ export const IntroDescription = () => {
         <h3 className="text-1xl font-semibold mb-2 mt-4 flex items-center text-blue-700">
           Sources
         </h3>
-        <p>
+        <p className="mb-4">
           The keyboard interaction information on this page is from the{" "}
           <a href="https://www.w3.org/WAI/ARIA/apg/patterns/">
             WAI Patterns pages
@@ -64,9 +64,8 @@ export const IntroDescription = () => {
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
             MDN Elements Web Docs
           </a>
-          <br />
-          <small>This page was last updated: February 20, 2025</small>
         </p>
+        <small>This page was last updated: February 20, 2025</small>
       </div>
     </div>
   );

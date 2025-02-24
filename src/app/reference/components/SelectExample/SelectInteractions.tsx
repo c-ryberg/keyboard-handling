@@ -26,6 +26,13 @@ export const SingleSelectInteractions = () => {
       <h4>Combobox Keyboard Interaction</h4>
       <p>When focus is on the combobox:</p>
       <ul>
+        {/* todo: figure out why this isn't in the WAI aria spec */}
+        {/* <li>
+          <kbd>Spacebar</kbd>: If the popup is available, moves focus into the
+          popup and places focus on the first focusable element in the popup. 
+          Or, if the popup is already open, selects the currently highlighted 
+          item and closes the popup
+        </li> */}
         <li>
           <kbd>Down Arrow</kbd>: If the popup is available, moves focus into the
           popup and places focus on the first focusable element in the popup.
