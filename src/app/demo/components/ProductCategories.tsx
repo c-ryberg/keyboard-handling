@@ -1,5 +1,5 @@
 export const ProductCategories = () => {
-  const categories = ["Electronics", "Clothing", "Home & Garden"];
+  const categories = ["Clothing", "Home & Garden", "Electronics"];
 
   return (
     <section className="py-12 bg-gray-100">
@@ -13,12 +13,23 @@ export const ProductCategories = () => {
               key={index}
               href="https://www.google.com"
               className="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-              style={{ outline: "none" }}
+              // style={{ outline: "none" }}
             >
               <h3 className="text-xl font-semibold mb-2">{category}</h3>
               <p className="text-gray-600">
                 Explore our {category.toLowerCase()} collection
               </p>
+              {category === "Electronics" && (
+                <div className="text-right">
+                  <a
+                    href="https://www.bing.com"
+                    tabIndex={-1}
+                    className="hover:underline"
+                  >
+                    Special Conditions
+                  </a>
+                </div>
+              )}
             </a>
           ))}
         </div>
