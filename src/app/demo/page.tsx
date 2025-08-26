@@ -16,8 +16,8 @@ import "./a11y-issues-demo.css";
 /**
  * add:
  * - carousel
- * - make the header stuff show on hover, not click
- * 
+ * - items with incorrect tab order
+ * - update the colors. They get washed out atm
  * - Add to the principles that anything that should NOT get focus, doesn't
  */
 

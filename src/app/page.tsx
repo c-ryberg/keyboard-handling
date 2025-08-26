@@ -81,7 +81,7 @@ export default function KeyboardTestingPage() {
               </li>
               <li>
                 <strong>Efficient Navigation:</strong> Users should be able to
-                bypass repetivite content (e.g. provide a skip link to jump past
+                bypass repetitivte content (e.g. provide a skip link to jump past
                 navigation bars)
               </li>
               <li>
