@@ -11,7 +11,7 @@ export const ProductCategories = () => {
           {categories.map((category, index) => (
             <a
               key={index}
-              href="https://www.google.com"
+              href="/demo/link"
               className="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               // style={{ outline: "none" }}
             >
@@ -22,7 +22,7 @@ export const ProductCategories = () => {
               {category === "Electronics" && (
                 <div className="text-right">
                   <a
-                    href="https://www.bing.com"
+                    href="/demo/link"
                     tabIndex={-1}
                     className="hover:underline"
                   >

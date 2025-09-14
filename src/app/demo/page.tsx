@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { ProductCategories } from "./components/ProductCategories";
 import { BlogTiles } from "./components/BlogTiles";
@@ -14,7 +13,7 @@ import { SustainabilityPromo } from "./components/SustainabilityPromo";
 import "./a11y-issues-demo.css";
 
 /**
- * add:
+ * todo: add
  * - carousel
  * - items with incorrect tab order
  * - update the colors. They get washed out atm
@@ -38,7 +37,6 @@ export default function AccessibilityIssuesDemo() {
         showDialog={isNewsletterDialogOpen}
         hideDialog={handleCloseNewsletterDialog}
       />
-      <Header />
       <main>
         <Hero />
         <ProductCategories />

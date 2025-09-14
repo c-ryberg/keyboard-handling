@@ -31,7 +31,7 @@ export const BlogTiles = () => {
             <div
               key={index}
               className="bg-gray-100 p-6 rounded-lg cursor-pointer"
-              onClick={() => (window.location.href = "https://www.google.com")}
+              onClick={() => (window.location.href = "/demo/link")}
             >
               <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
               <p className="text-gray-600">{post.excerpt}</p>

@@ -10,7 +10,7 @@ export const NewsletterSuccessDialog = ({
   return (
     <>
       {showDialog && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="bg-white p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-4">Thank You!</h3>
             <p className="mb-4">

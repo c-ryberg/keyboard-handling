@@ -59,7 +59,7 @@ export const HeaderSubmenu = ({ mainMenuItem }: { mainMenuItem: string }) => {
             {submenuItems.map((category, categoryIndex) => (
               <li key={categoryIndex}>
                 <Link
-                  href="#"
+                  href="/demo/link"
                   className="block py-1 px-2 hover:bg-gray-600 text-white"
                   onClick={(e) => {
                     e.preventDefault();
@@ -73,7 +73,7 @@ export const HeaderSubmenu = ({ mainMenuItem }: { mainMenuItem: string }) => {
           </ul>
         </div>
       ) : (
-        <Link href="#" className="hover:text-gray-300">
+        <Link href="/demo/link" className="hover:text-gray-300">
           {mainMenuItem}
         </Link>
       )}

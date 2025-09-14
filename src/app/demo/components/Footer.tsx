@@ -13,18 +13,18 @@ export const Footer = () => {
           <h3 className="text-xl font-bold mb-4">Quick Links</h3>
           <ul>
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <a href="/demo/link" className="hover:text-gray-300">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <a href="/demo/link" className="hover:text-gray-300">
                 Products
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="/demo/link"
                 className="hover:text-gray-300"
                 style={{ outline: "none" }}
               >
@@ -33,7 +33,7 @@ export const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/demo/link"
                 className="hover:text-gray-300"
                 style={{ outline: "none" }}
               >
@@ -45,13 +45,13 @@ export const Footer = () => {
         <div className="w-full md:w-1/3">
           <h3 className="text-xl font-bold mb-4">Follow Us</h3>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-gray-300">
+            <a href="/demo/link" className="hover:text-gray-300">
               Facebook
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="/demo/link" className="hover:text-gray-300">
               Twitter
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="/demo/link" className="hover:text-gray-300">
               Instagram
             </a>
           </div>

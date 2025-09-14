@@ -4,7 +4,7 @@ import heroImage from "../../../../public/tobias-rademacher-NuBvAE6VfSM-unsplash
 export const Hero = () => {
   return (
     <section className="relative h-96">
-      <a href="https://www.google.com" className="block w-full h-full">
+      <a href="/demo/link" className="block w-full h-full">
         <Image
           src={heroImage}
           alt="Hero image"

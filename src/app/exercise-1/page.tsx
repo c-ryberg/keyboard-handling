@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 import {
   UploadStatusTable,
 } from "../../components/UploadStatusTable/UploadStatusTable";

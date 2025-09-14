@@ -57,7 +57,7 @@ export const Header = () => {
         <ul className="mt-4">
           {mainMenuItems.map((item, index) => (
             <li key={index} className="mb-2">
-              <Link href="#" className="block hover:text-gray-300">
+              <Link href="/demo/link" className="block hover:text-gray-300">
                 {item}
               </Link>
             </li>
@@ -77,7 +77,7 @@ export const Header = () => {
         <ul className="mt-4">
           {mainMenuItems.map((item, index) => (
             <li key={index} className="mb-2">
-              <Link href="#" className="block hover:text-gray-300" tabIndex={0}>
+              <Link href="/demo/link" className="block hover:text-gray-300" tabIndex={0}>
                 {item}
               </Link>
             </li>
