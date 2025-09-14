@@ -1,0 +1,20 @@
+"use client";
+
+import { UploadStatusTableSolved } from "../../components/UploadStatusTable";
+
+export default function ExerciseLoadingStatusPage() {
+  return (
+    <div className="min-h-screen bg-gray-100 pt-12">
+      <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        <main className="py-8 px-4 sm:px-6 lg:px-8">
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-blue-700">
+              Exercise: Status Indicators (Solved)
+            </h2>
+            <UploadStatusTableSolved />
+          </section>
+        </main>
+      </div>
+    </div>
+  );
+}
