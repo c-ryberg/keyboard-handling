@@ -148,7 +148,7 @@ export default function KeyboardTestingPage() {
             <h2 className="text-2xl font-semibold mb-4 flex items-center text-blue-700">
               <BugIcon /> Common Issues to Watch For
             </h2>
-            <ul className="list-none pl-6 space-y-2 text-gray-700">
+            <ul className="list-none space-y-2 text-gray-700">
               <li>
                 <strong className="text-red-600">
                   <Cross /> No Focus Indicator:

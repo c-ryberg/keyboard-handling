@@ -178,7 +178,11 @@ export default function Home() {
                     long-term storage. An input device as well as some form of
                     output device is recommended.
                   </p>
-                  <a href="www.google.com">
+                  <a
+                    href="https://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Here is a focusable link that goes to Google
                   </a>
                 </details>

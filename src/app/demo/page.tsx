@@ -10,11 +10,10 @@ import { NewsletterSuccessDialog } from "./components/NewsletterSuccessDialog";
 import { Footer } from "./components/Footer";
 import { SustainabilityPromo } from "./components/SustainabilityPromo";
 
-import "./a11y-issues-demo.css";
-
 /**
  * todo: add
  * - carousel
+ * - buttons with no feedback when you click them
  * - items with incorrect tab order
  * - update the colors. They get washed out atm
  * - Add to the principles that anything that should NOT get focus, doesn't
